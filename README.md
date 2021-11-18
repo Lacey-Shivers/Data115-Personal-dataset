@@ -12,5 +12,6 @@ Contingemcy Table2 is between the different races and number of cases per the am
 The scatterplot shows a visualization of the data.
 The plot represents the women and different races by the year they were reported, and colored by the number of cases reported. 
 The plot helps visualize the relationship between the number of cases in the different races that were reported between the years 2015 to 2019.
+
 ![image](https://user-images.githubusercontent.com/91345984/142364212-68153f6c-1b2f-46c1-b3a3-bae35e924e70.png)
 
