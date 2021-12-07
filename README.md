@@ -9,7 +9,7 @@ I plan on answering the questions
  1) What is the average number of women who get diabetes in comparison to the different races of population? During the last 5 years.
  2) In 2019, did the average number increase or decrease for women and different races for people who got diabetes. 
 
-Data Process: Using the most recently uploaded data to the github repository, 
+Data Process: Using the most recently uploaded data to the github repository, I processed the gathered data by 
 
 
 
