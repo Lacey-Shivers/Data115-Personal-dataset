@@ -44,8 +44,8 @@ mydata <- scale(mydata[,9])  # DataValue column of data
 
 # Determines the number of clusters
 wss <- (nrow(mydata)-1)*sum(apply(mydata,2,var))
-for (i in 2:15) wss[i] <- sum(kmeans(mydata, centers=i)$withinss)
-plot(1:15, wss, type="b", xlab="Number of Clusters", ylab="Within groups sum of squares")
+for (i in 2:10) wss[i] <- sum(kmeans(mydata, centers=i)$withinss)
+plot(1:10, wss, type="b", xlab="Number of Clusters", ylab="Within groups")
 
 fit <- kmeans(mydata, 5)
 # get cluster means
@@ -68,10 +68,12 @@ table(Stratification1,YearStart) # displays the number of people with diabetes i
 ## table of stratification and yearstart is shown in the first visualization of contingency table one. 
 
 ``` 
-![image](https://user-images.githubusercontent.com/91345984/144958659-b658dbae-0cf4-4db2-869b-784082c6cc83.png)
+![image](https://user-images.githubusercontent.com/91345984/144966977-12766f48-73c1-48fc-937f-54539226cfd6.png)
 ![image](https://user-images.githubusercontent.com/91345984/144958699-7addfbca-9e04-42ed-b95c-5d6b136a51a1.png)
 
-I chose to do a statistics summary of the data, then use a k-means clustering of the data to check a column of data for outliers. The statistical summary shows that the diabetes data has some distribution of data samples for the data distribution. While the boxplot only checks one of the data columns, it shoes that there are many outliers in the data. The data value column is a component for the visualization of the data. This column is a measure of value for the diabetes through 2015 to 2019. The analytical techniques help represent the diabetes in women and different races by having a more accurate representation of the data. Being able to spot the outliers and the use of the summary guides to the answer of an analytical question. Over the last 5 years the data shows how in women and different races of population there is fluctuation in the data. In comparison of all the data from the analysis, the question of 'What is the highest number of women or different races who get diabetes over the years of 2015 to 2019 of percentage and cases?'. Looking at contengency table2 in the first visual it is seen that of the percentage of cases women (Females) are the most number of cases of the population, next to the overall group of the categories. However, covering all the analysis of data, in 2019 the Female population having diabetes declined from previous years. 
+I chose to do a statistics summary of the data, then use a k-means clustering of the data to check a column of data for outliers. The statistical summary shows that the diabetes data has some distribution of data samples for the data distribution. While the boxplot only checks one of the data columns, it shoes that there are many outliers in the data. The data value column is a component for the visualization of the data. This column is a measure of value for the diabetes through 2015 to 2019. The analytical techniques help represent the diabetes in women and different races by having a more accurate representation of the data. Being able to spot the outliers and the use of the summary guides to the answer of an analytical question. Over the last 5 years the data shows how in women and different races of population there is fluctuation in the data. In comparison of all the data from the analysis, the question of 'What is the highest number of women or different races who get diabetes over the years of 2015 to 2019 of percentage and cases?'. Looking at contengency table2 in the first visual it is seen that of the percentage of cases women (Females) are the most number of cases of the population, next to the overall group of the categories. However, covering all the analysis of data, in 2019 the Female population having diabetes declined from previous years. The clusters of the data represents the observations for the nearest mean. With the mean of the clusters used to evaluate the DataValue, it demonstrates the range of value for diabetes within the categories of women and different races.  
+
+in conclusion the statistacal analysis was able to 
 
 
 
