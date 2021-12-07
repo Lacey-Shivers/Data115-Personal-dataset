@@ -32,24 +32,39 @@ The plot helps visualize the relationship between the number of cases in the dif
 Analysis:
 
 Coding for analysis:
-```{r analytical techniques}
-# summary statistics
+```{r analysis}
+mydata <- read_excel("Charts_U.S._C_D_I_D.xlsx")
+attach(mydata)
+
 summary(mydata)
 summary(stat(mydata))
 
+mydata <- na.omit(mydata) # listwise deletion of missing data
+mydata <- scale(mydata[,9])  # DataValue column of data 
+
+# Determines the number of clusters
+wss <- (nrow(mydata)-1)*sum(apply(mydata,2,var))
+for (i in 2:15) wss[i] <- sum(kmeans(mydata, centers=i)$withinss)
+plot(1:15, wss, type="b", xlab="Number of Clusters", ylab="Within groups sum of squares")
+
+fit <- kmeans(mydata, 5)
+# get cluster means
+aggregate(mydata,by=list(fit$cluster),FUN=mean)
+# append cluster assignment
+mydata <- data.frame(mydata, fit$cluster)
+
 library(ggplot2)
-# checks for outliers
+
 Q1 <- quantile(mydata$DataValue,0.25, na.rm = TRUE) 
 Q3 <- quantile(mydata$DataValue,0.75, na.rm = TRUE) 
 IQR1 <- Q3-Q1
 Outlier1 <- which(mydata$DataValue < Q1-(1.5*IQR1) | mydata$DataValue > Q3+(1.5*IQR1))
 
-# BOXPLOT for outliers of a column
-library(ggplot2) 
-ggplot(mydata, aes(y=DataValue))+ 
-  geom_boxplot(outlier.colour="red", outlier.shape=4, outlier.size=4)
+# BOXPLOT for outliers
+ggplot(mydata, aes(y=DataValue))+ geom_boxplot(outlier.colour="red", outlier.shape=4, outlier.size=4)
 ```
-![image](https://user-images.githubusercontent.com/91345984/144956501-a08ab0d1-697d-4136-b688-a30361ad225f.png)
+![image](https://user-images.githubusercontent.com/91345984/144958659-b658dbae-0cf4-4db2-869b-784082c6cc83.png)
+![image](https://user-images.githubusercontent.com/91345984/144958699-7addfbca-9e04-42ed-b95c-5d6b136a51a1.png)
 
 I chose to do a statistics summary of the data and check a column of data for outliers. The statistical summary shows that the diabetes data has some distribution of data samples for the data distribution. While the boxplot only checks one of the data columns, it shoes that there are many outliers in the data. The data value column is a component for the visualization of the data. This column is a measure of value for the diabetes through 2015 to 2019. The analytical techniques help represent the diabetes in women and
 different races by having a more accurate representation of the data. Being able to spot the outliers and the use of the summary guides to the answer of an analytical question.
