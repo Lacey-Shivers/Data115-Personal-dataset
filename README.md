@@ -9,7 +9,7 @@ I plan on answering the questions
  1) What is the average number of women who get diabetes in comparison to the different races of population? During the last 5 years.
  2) In 2019, did the average number increase or decrease for women and different races for people who got diabetes. 
 
-Data Process: Using the most recently uploaded data to the github repository, I processed the gathered data by 
+Data Process: Using the most recently uploaded data to the github repository, Charts_U.S.C_D_I_D.xlsx, I processed the gathered data by first cutting out the unwanted or what I felt was not neccessary for answering the potential questions. I cut out all the data between the years 2010 and 2014, keeping the years of data between 2015 and 2019. Then with the remaining years I took out the male pertaining data to focus on women and different races of the states populations. Next I removed the Null data of the rows missing data of the within columns. With the remaining data from the cutting down, I continued to process the data by 
 
 
 
