@@ -31,4 +31,24 @@ The plot helps visualize the relationship between the number of cases in the dif
 
 Analysis:
 
+Coding for analysis:
+```{r analytical techniques}
+summary(mydata)
+summary(stat(mydata))
+
+library(ggplot2)
+
+Q1 <- quantile(mydata$DataValue,0.25, na.rm = TRUE) 
+Q3 <- quantile(mydata$DataValue,0.75, na.rm = TRUE) 
+IQR1 <- Q3-Q1
+Outlier1 <- which(mydata$DataValue < Q1-(1.5*IQR1) | mydata$DataValue > Q3+(1.5*IQR1))
+
+# BOXPLOT for outliers
+library(ggplot2) 
+ggplot(mydata, aes(y=DataValue))+ 
+  geom_boxplot(outlier.colour="red", outlier.shape=4, outlier.size=4)
+```
+I chose to do a statistics summary of the data and check a column of data for outliers. The statistical summary shows that the diabetes data has some distribution of data samples for the data distribution. While the boxplot only check one of the data columns, it shoes that there are many outliers in the data. The data value column is a component for the visualization of the data. This column is a measure of value for the diabetes through 2015 to 2019. The analytical techniques help represent the diabetes in women and
+different races by having a more accurate representation of the data. Being able to spot the outliers and the use of the summary will guide me to answering the analysts questions.
+
 
