@@ -49,6 +49,8 @@ library(ggplot2)
 ggplot(mydata, aes(y=DataValue))+ 
   geom_boxplot(outlier.colour="red", outlier.shape=4, outlier.size=4)
 ```
+![image](https://user-images.githubusercontent.com/91345984/144956501-a08ab0d1-697d-4136-b688-a30361ad225f.png)
+
 I chose to do a statistics summary of the data and check a column of data for outliers. The statistical summary shows that the diabetes data has some distribution of data samples for the data distribution. While the boxplot only checks one of the data columns, it shoes that there are many outliers in the data. The data value column is a component for the visualization of the data. This column is a measure of value for the diabetes through 2015 to 2019. The analytical techniques help represent the diabetes in women and
 different races by having a more accurate representation of the data. Being able to spot the outliers and the use of the summary guides to the answer of an analytical question.
 
