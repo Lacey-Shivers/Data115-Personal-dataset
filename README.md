@@ -8,7 +8,7 @@ A motivation for this project is the curiousity of diabetes overall, how it is a
 
 I plan on answering the questions 
  1) What is the average number of women who get diabetes in comparison to the different races of population? During the last 5 years.
- 2) In 2019, did the average number increase or decrease for women who got diabetes. 
+ 2) In 2019, did the average number increase or decrease for women who got diabetes? 
 
 Data Process: 
 
