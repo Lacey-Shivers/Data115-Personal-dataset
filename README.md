@@ -1,7 +1,9 @@
 # Data115-Personal-dataset
 Personal dataset project by Lacey Shivers
 
-# currently updating the project data with the most recent sourced data for the last 5 years 2016-2020, from 2015-2019.
+currently updating the project data with the most recent sourced data for the last 5 years 2016-2020, from 2015-2019. looking for a new trend in the new data.
+might add the 2020 year and compare states?
+
 Motivation: 
 
 The topic for my personal data is diabetes in women and different races.
