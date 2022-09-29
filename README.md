@@ -1,4 +1,4 @@
-# Data115-Personal-dataset
+# Personal-dataset
 Personal dataset project by Lacey Shivers
 
 currently updating the project data with the most recent sourced data for the last 5 years 2016-2020, from 2015-2019. looking for a new trend in the new data.
@@ -18,7 +18,7 @@ Data Process:
 
 Using the found data sourced and collected by the CDC, I processed the gathered data for cleaning by first cutting out the unwanted or what I felt was not neccessary for answering the potential questions. I cut out all the data between the years 2010 and 2014, keeping the years of data between 2015 and 2019. Then with the remaining years I took out the male pertaining data to focus on women and different races of the states populations. Next I removed the Null data of the rows missing data of the within columns. With the remaining data from the cutting down, I continued to process the data by looking over match ups of columns to correlate with potential answers to questions of diabetes. The processed transformed data is filtered out and shows the years of filled data from 2015 to 2019, to be used for answering diabetes in populations of women and different races.
 
-Using the most recently uploaded and transformed data to the github repository, Charts_U.S.C_D_I_D.xlsx, I put together a visualization below. 
+Using the most recently uploaded and transformed data to the github repository, FIXX Charts_U.S.C_D_I_D.xlsx, I put together a visualization below. 
 
 Visualization:
 
@@ -38,7 +38,7 @@ The plot helps visualize the relationship between the number of cases in the dif
 
 Analysis:
 
-Coding for analysis:
+Coding for analysis: FIXXX
 ```{r analysis}
 mydata <- read_excel("Charts_U.S._C_D_I_D.xlsx")
 attach(mydata)
