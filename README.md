@@ -1,24 +1,23 @@
 # Personal-dataset
 Personal dataset project by Lacey Shivers
 
-currently updating the project data with the most recent sourced data for the last 5 years 2016-2020, from 2015-2019. looking for a new trend in the new data.
-might add the 2020 year and compare states?
+This project is being updated. Using the original cleaned data collected instead of newly sourced data to further answer questions and use the found data more in depth. 
 
 Motivation: 
 
 The topic for my personal data is diabetes in women and different races.
-A motivation for this project is the curiousity of diabetes overall, how it is affected in the population. I was led to this specific dataset provided by the Center for Disease Control (CDC) (https://www.cdc.gov/chronicdisease/data/index.htm) by the vast abundance of publicly available data. This source of data is related to the chronic disease of diabetes, I decided on the CDC data source because they use an open source of data that is large and updated regularly. The data is collected from the Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, and Division of Population Health. The available data is updated this year of 2021 (new data March 24, 2022), with the original dataset covering the years from 2010 to 2019 (2020) of diabetes in gender and different races of populations. The original data has data from all the states of populations affected. The data covers the CDC indicators for diabetes. I think this data will help potentially answer one of my questions. If the data can not answer one of my questions it can answer related questions of topic. The data is already processed into organized columns that covers data of years of chronic disease throughout the different states. Since it is open source and a large amount of data with 144 thousand rows and 33 columns, I excluded all of the year start data before 2015 (2016), rows containing blank data, and the data containing the male gender to see a more recent trend of diabetes in women. The data will look at the diabetes and see how it is prevalent in people.
+A motivation for this project is the curiousity of diabetes overall, how it is affected in the population. I was led to this specific dataset provided by the Center for Disease Control (CDC) (https://www.cdc.gov/chronicdisease/data/index.htm) by the vast abundance of publicly available data. This source of data is related to the chronic disease of diabetes, I decided on the CDC data source because they use an open source of data that is large and updated regularly. The data is collected from the Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, and Division of Population Health. The available data is updated this year of 2021, with the original dataset covering the years from 2010 to 2019 of diabetes in gender and different races of populations. The original data has data from all the states of populations affected. The data covers the CDC indicators for diabetes. I think this data will help potentially answer one of my questions. If the data can not answer one of my questions it can answer related questions of topic. The data is already processed into organized columns that covers data of years of chronic disease throughout the different states. Since it is open source and a large amount of data with 144 thousand rows and 33 columns, I excluded all of the year start data before 2015, rows containing blank data, and the data containing the male gender to see a more recent trend of diabetes in women. The data will look at the diabetes and see how it is prevalent in people.
 
-I plan on answering the questions 
+Original plan to answer these questions. What other questions could the data present and answer?
  1) What is the average number of women who get diabetes in comparison to the different races of population? During the last 5 years.
- 2) In 2019 (2020), did the average number increase or decrease for women who got diabetes? 
- 3) Is there a difference in the 2019 trend of women with diabetes compared to 2020? # new question to answer; with updated data 
+ 2) In 2019, did the average number increase or decrease for women who got diabetes? 
+ 3*) Is there a difference in the 2018 trend of women with diabetes compared to 2019? # new question to answer  
 
 Data Process: 
 
 Using the found data sourced and collected by the CDC, I processed the gathered data for cleaning by first cutting out the unwanted or what I felt was not neccessary for answering the potential questions. I cut out all the data between the years 2010 and 2014, keeping the years of data between 2015 and 2019. Then with the remaining years I took out the male pertaining data to focus on women and different races of the states populations. Next I removed the Null data of the rows missing data of the within columns. With the remaining data from the cutting down, I continued to process the data by looking over match ups of columns to correlate with potential answers to questions of diabetes. The processed transformed data is filtered out and shows the years of filled data from 2015 to 2019, to be used for answering diabetes in populations of women and different races.
 
-Using the most recently uploaded and transformed data to the github repository, FIXX Charts_U.S.C_D_I_D.xlsx, I put together a visualization below. 
+Using the most recently uploaded and transformed data to the github repository, Charts_U.S.C_D_I_D.xlsx, I put together a visualization below. 
 
 Visualization:
 
@@ -38,7 +37,7 @@ The plot helps visualize the relationship between the number of cases in the dif
 
 Analysis:
 
-Coding for analysis: FIXXX
+Coding for analysis:
 ```{r analysis}
 mydata <- read_excel("Charts_U.S._C_D_I_D.xlsx")
 attach(mydata)
